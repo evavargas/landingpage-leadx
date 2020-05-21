@@ -239,12 +239,31 @@ body {
     width: 12%;
     margin: 0% auto;
 }
+.content-footer{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+#contact-us, #about, #twitter-tweets, #connetc{
+    display: inline-block;
+    width: 20%;
+
+}
+.content-footer p{
+    font-family: Montserrat-Light;
+    font-size: small;
+}
 /*IMAGENES COMO BACKGROUND*/
 
 .back-img {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+/**/
+footer{
+    background-color: rgb(45,55,77);
+    padding: 20px 65px 5px 65px;
 }
 
 /*body 1*/
