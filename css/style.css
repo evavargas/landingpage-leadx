@@ -18,6 +18,8 @@
     src: url(../source/fuentes/OpenSans/OpenSans-ExtraBold.ttf);
 }
 
+/*Media queries*/
+
 @media (max-width: 1200px) {
     .title {
         padding-left: 20%;
@@ -44,29 +46,40 @@
         padding-bottom: 70px;
     }
 }
-.green-mont{
+
+/*font-styles*/
+
+.green-mont {
     color: rgb(92, 189, 153);
     font-family: 'Montserrat';
     line-height: 2;
     padding-top: 60px;
     font-size: 90%;
 }
-.white-mont{
+
+.white-mont {
     color: white;
     font-family: Montserrat;
     line-height: 2;
     font-size: 160%;
 }
-.blue-mont{
-    color: rgb(29,43,70);
+
+.blue-mont {
+    color: rgb(29, 43, 70);
     font-family: 'Montserrat';
-    line-height: 2;
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 200%;
 }
+
+/**************************************/
 
 body {
     margin: 0;
     padding: 0%;
 }
+
+/*screen 1*/
 
 .body-1 {
     padding-bottom: 200px;
@@ -91,13 +104,6 @@ body {
     text-align: center;
     font-size: 240%;
     font-family: 'OpenSans-Light';
-}
-
-.body-1 {
-    background-image: url(../source/images/leadx_header_bg_template-1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .action-button {
@@ -130,22 +136,11 @@ body {
 .sell-button p {
     color: white;
 }
-.body-2 {
-    background-image: url(../source/images/leadx_header_bg_template-1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transform: rotateX(180deg);
-    padding: 4% 0%;
-}
-.body-2::before{
-    z-index: -1;
-    background: url(../source/images/leadx_header_bg_template-1.png);
-    
-}
 
-#steps-option{
-    background-color: rgb(29,43,70);
+/*screen 2*/
+
+#steps-option {
+    background-color: rgb(29, 43, 70);
     background-clip: padding-box;
     text-align: center;
     display: flex;
@@ -157,68 +152,165 @@ body {
     transform: rotateX(180deg);
 }
 
-.steps{
+.steps {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
     flex-wrap: nowrap;
-    
 }
-.card-steps{
+
+.card-steps {
     color: white;
     font-family: OpenSans-Light;
-
     padding: 8px;
 }
-.card-steps div p{
+
+.card-steps div p {
     font-family: Montserrat;
     line-height: 2.5;
     padding-bottom: 10px;
 }
 
-.back-img{
+/*screen 3*/
+
+.body-3 {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 10% 0% 10%;
+}
+
+.text-card {
+    display: inline-block;
+    position: relative;
+    width: 520px;
+    padding: 38px;
+}
+
+.text-card p {
+    font-family: Montserrat-Light;
+    line-height: 1.8;
+    font-size: 97%;
+}
+
+.card-illust {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/*screen 4*/
+
+.body-4 {
+    margin-top: 50px;
+    padding: 0% 10%;
+}
+
+.body-4 h1 {
+    padding: 8%;
+    text-align: center;
+    font-size: smaller;
+}
+
+.body-4 h2,.body-4 h1, .body-4 p {
+    margin: 0%;
+}
+
+#numbers {
+    font-family: Montserrat-Light;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 120%;
+    padding: 0% 2% 16% 2%;
+}
+
+#numbers p {
+    font-family: Montserrat-Light;
+    font-size: small;
+    font-weight: bolder;
+    padding-top: 8px;
+}
+
+#numbers hr{
+    width: 12%;
+    margin: 0% auto;
+}
+/*IMAGENES COMO BACKGROUND*/
+
+.back-img {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.body-3{
-    display: flex;
-    flex-flow: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+/*body 1*/
+
+.body-1 {
+    background-image: url(../source/images/leadx_header_bg_template-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.text-card{
-    display: inline-block;
-}
-.card-illust  {
-    display: inline-block;
-    width: 40%;
-} 
 
 /* body 2*/
-#install-theme{
+
+.body-2 {
+    background-image: url(../source/images/leadx_header_bg_template-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateX(180deg);
+    padding: 4% 0%;
+}
+
+.body-2::before {
+    z-index: -1;
+    background: url(../source/images/leadx_header_bg_template-1.png);
+}
+
+#install-theme {
     background-image: url(../source/images/leadx_icon_install.png);
     width: 100%;
     height: 100px;
 }
-#customize{
+
+#customize {
     background-image: url(../source/images/leadx_icon_customize.png);
     width: 100%;
     height: 100px;
 }
-#generate-leads{
+
+#generate-leads {
     background-image: url(../source/images/leadx_icon_leads.png);
     width: 100%;
     height: 100px;
 }
-/* body 3*/
-#illust-cerdito{
-    background-image: url(../source/images/illustration_signupform_grey.png);
-    height: 300px;
 
+/* body 3*/
+
+#illust-cerdito {
+    background-image: url(../source/images/illustration_signupform_grey.png);
+    height: 450px;
+    width: 540px;
+    background-size: cover;
 }
-#illust-time{
+
+#illust-time {
     background-image: url(../source/images/illustration_demos_grey.png);
-    height: 300px;
+    height: 450px;
+    width: 540px;
+    background-size: cover;
+}
+
+/*body 4*/
+
+.bg-img-green {
+    background-image: url(../source/images/leadx_number_bg.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
